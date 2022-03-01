@@ -90,7 +90,12 @@ img{
     color: rgba(255,255,255,1) !important;
 }
 .main-aria-sidebar{
-    margin-top: 90px !important;
+    margin-top: 120px !important;
+    padding: 50px 0;
+}
+.btn:hover {
+    color: #fff !important;
+    background:#1a365f ;
 }
 @media(max-width:768px){
     .welcome-info .title-right {
@@ -102,16 +107,7 @@ img{
     .welcome-icon{
         text-align: center !important;
     }
-    /*.logo img {*/
-    /*    top: 4%;*/
-    /*    left: 18px;*/
-    /*}*/
-    /*.top-menu {*/
-    /*    margin-top: 14px;*/
-    /*}*/
-    /*.navbar-collapse {*/
-    /*    margin-top: 69px !important;1px solid rgba(255,255,255,.55);*/
-    /*}*/
+
     .left-menu {
         border-top: 0px;
         border-bottom: 0px;
@@ -160,44 +156,7 @@ img{
         display: flex;
         flex-direction: column;
     }
-    /*.single-block-info {*/
-    /*    margin-top: 8px;*/
-    /*    display: flex;*/
-    /*    align-items: center;*/
-    /*    justify-content: space-around;*/
-    /*}*/
-    /*.event-count {*/
-    /*    display: flex;*/
-    /*    padding: 0 40px;*/
-    /*}*/
-    /*.top-menu{*/
-    /*    display: none;*/
-    /*}*/
-    /*.mainmenu li {*/
-    /*   display: flex;*/
-    /*}*/
-    /*.mainmenu li a {*/
-    /*    display: block;*/
-    /*    text-transform: uppercase;*/
-    /*    color: #fff;*/
-    /*    padding: 7px 12px;*/
-    /*}*/
-    /*.mainmenu {*/
-    /*    margin-top: 114px;*/
-    /*    border-top: 1px solid #fff;*/
-    /*}*/
-    /*.menubar {*/
-    /*    display: block;*/
-    /*    color: #fff;*/
-    /*    font-size: 46px;*/
-    /*    float: right;*/
-    /*    cursor: pointer;*/
-    /*    margin-top: 18px;*/
-    /*}*/
-    /*.menubar:hover mainmenu{*/
-    /*    display: block;*/
-    /*    opacity: 1;*/
-    /*}*/
+
     .event-area h2::before {
         left: 14%;
     }
@@ -230,10 +189,7 @@ img{
     letter-spacing: 1px;
     margin-bottom: 12px;
 }
-/*.main-aria-sidebar {*/
-/*    top: 40%;*/
-/*    margin-top: -50px;*/
-/*}*/
+
 .main-aria-sidebar h2{
     font-size: 42px;
     color: #000;
@@ -347,13 +303,6 @@ justify-content:center;
   }
 }
 
-
-/*intro-img {*/
-/*    object-fit: cover;*/
-/*    box-shadow: 0.5rem 0.5rem #ffc107;*/
-/*    height: 258px;*/
-/*    width: 235px;*/
-/*}*/
 .intro-title {
     margin-top: 20px;
 }
@@ -901,6 +850,141 @@ footer h6, footer h6 a, footer p, footer p a, footer strong
         border-bottom:1px solid #ccc;
     }
 }
-#map{
 
+/*teacher css*/
+.teacher-section{
+    background: url(img/line2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.teacher {
+    position: relative;
+}
+
+.image {
+    display: block;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity:0;
+    transition: .5s ease;
+    background-color: rgba(255,255,255,0.4);
+}
+
+.teacher:hover .overlay {
+    opacity: 1;
+}
+.text {
+    color: #333;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 18px;
+    letter-spacing: 1px;
+}
+.text h4 {
+    color: #333;
+    -webkit-text-stroke: 1px #282828;
+    text-shadow: 0px -2px 5px #282828;
+    margin: 0;
+    font-size: 20px;
+}
+.list-inline{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+
+}
+.list-inline li a ion-icon {
+    color: #fff;
+    font-size: 17px;
+    background: #1c0f0f7a;
+    border-radius: 50%;
+    padding: 8px;
+}
+/*teacher css*/
+
+.mage-menu-area{
+
+}
+.image-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 16px;
+}
+
+.image-menu li {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+.single-image {
+    position: relative;
+    border: 2px dashed #333;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.image {
+    display: block;
+    height: auto;
+    border-radius: 6px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity:0;
+    transition: .5s ease;
+    background-color: rgba(255,255,255,0.6);
+}
+
+.single-image:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.overlay a ion-icon {
+    font-size: 35px;
+    color: #ffffff;
+    background: #33333366;
+    border-radius: 50%;
+    padding: 15px;
 }
