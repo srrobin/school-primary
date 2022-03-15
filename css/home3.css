@@ -1,0 +1,31 @@
+header {
+    height: 100vh;
+    Width: 100vw;
+    background-image: linear-gradient(to right,rgba(15, 54, 78,.9),rgba(124,198,199,.5)), url(../img/home3.jpg);
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    position: relative;
+}
+header .wave{
+ position:absolute;
+ left:0;
+ bottom:0;
+ width:100%;
+}
+
+header .text-section {
+    position: absolute;
+    display: block;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: capitalize;
+}
+.text-section  h2 {
+    font-size: 43px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}

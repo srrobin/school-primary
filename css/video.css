@@ -1,0 +1,62 @@
+.video ion-icon {
+  position: relative;
+  color: #fff;
+  font-size: 50px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.video ion-icon::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 30%;
+  border: 3px solid #e5a84f;
+  animation: animate 1.5s linear infinite;
+  opacity: 0;
+}
+.video ion-icon::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 40%;
+  border: 3px solid #fff;
+  animation: animated 1.5s linear infinite;
+  opacity: 0;
+  animation-delay: 0.6s;
+}
+@keyframes animate {
+  0% {
+    transform: scale(0.5);
+  }
+  30% {
+    opacity: scale(0.9);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+@keyframes animated {
+  0% {
+    transform: scale(0.5);
+  }
+  30% {
+    opacity: scale(0.9);
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}

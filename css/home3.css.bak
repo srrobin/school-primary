@@ -1,0 +1,26 @@
+header{ 
+ height:92vh;
+ Width:100vw;
+ background-image: linear-gradient(to right,rgba(255,0,204,.6),rgba(51,51,153,.6)), url('../img/background.jpg');
+ background-size:cover;
+ background-position:center center;
+ background-attachment:fixed;
+clip-path: polygon(0 0,100% 0,100% 80%,50% 100%,0 80%);
+position:relative;
+ 
+}
+header .text-container {
+    position: absolute;
+    display: block;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: capitalize;
+}
+.text-container  h2 {
+    font-size: 43px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
